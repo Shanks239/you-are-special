@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Sparkles, Heart, Compass, Brain, Star, Zap, Eye, Mountain, ArrowRight, SkipForward, MessageCircle } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function YouAreSpecial() {
   const [currentStep, setCurrentStep] = useState(-1);
@@ -581,6 +582,7 @@ export default function YouAreSpecial() {
           animation: slideIn 0.5s ease-out forwards;
         }
       `}</style>
+      <Analytics />
     </div>
   );
                   }
